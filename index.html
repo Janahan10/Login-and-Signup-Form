@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+        <script type="text/javascript" src="tabs.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+        <title>Login/Register</title>
+    </head>
+
+    <body>
+
+        <div class="outer">
+            <div class="tabsBar">
+                <button class="tabs" onclick="openTab('login')" id="onloadTab">Login</button>
+                <button class="tabs" style="float: right;" onclick="openTab('signUp')">Sign Up</button>
+            </div>
+            
+            
+            <div class="tabsInformation" id="login">
+                <h3 >Login Information</h3>
+                <form id="loginForm" method="POST" action="check.php">
+                    <label>Username: </label><br>
+                    <input type="text" name="user" required placeholder="Username" size="40"><br>
+                    <label>Password: </label><br>
+                    <input type="password" name="pass" required placeholder="Password" size="40"><br>
+                    <input type="submit" class="fullSize">
+                </form>
+            </div>
+           
+            <div class="tabsInformation" id="signUp" style="display: none;">
+
+                <h3 style="text-align: center;">Sign Up Information</h3>
+
+                <form id="signUpForm" method="POST" action="signup.php">
+                    <label>First Name: </label><br>
+                    <input type="text" name="Fname" required placeholder="First Name" size="40"><br>
+                    <label>Last Name: </label><br>
+                    <input type="text" name="Lname" required placeholder="Last Name" size="40"><br>
+                    <label>E-mail: </label><br>
+                    <input type="text" name="email" required placeholder="E-Mail" size="40"><br>
+                    <label>Username: </label><br>
+                    <input type="text", name="username" required placeholder="Username" size="40"><br>
+                    <label>Password: </label><br>
+                    <input type="password" name="pass" required placeholder="Password" size="40"><br>
+                    <input type="submit" class="fullSize">
+                </form>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+</html>
